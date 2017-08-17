@@ -1,0 +1,13 @@
+machine:
+  services:
+    - docker
+
+test:
+  override:
+    - echo "test"
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - ./deploy.sh
